@@ -11,15 +11,21 @@ namespace Assets.Scripts.SmallGame
         struct CameraMoveData
         {
             public readonly int Length;
-            [ReadOnly]public SharedComponentDataArray<CameraMove> cameraComponentDataArray;
+            [ReadOnly]
+            public SharedComponentDataArray<CameraMove> cameraComponentDataArray;
         }
 
-        [Inject]private CameraMoveData _data;
+        [Inject]
+        private CameraMoveData _data;
+        ComponentGroup _group;
 
+        protected override void OnCreateManager()
+        {
+            _group = GetComponentGroup(typeof(Position), typeof(PlayerInput));
+        }
         protected override void OnUpdate()
         {
-            var group = GetComponentGroup(typeof(Position), typeof(PlayerInput));
-            var entities = group.GetComponentDataArray<Position>();
+            var entities = _group.GetComponentDataArray<Position>();
             for (int i = 0; i < entities.Length; i++)
             {
                 var entityPosition = entities[i];
