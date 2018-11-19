@@ -1,0 +1,40 @@
+/bin
+/Library
+*.unityproj
+*.userprefs
+*.pidb
+*.pidb.meta
+/Temp
+*.DS_Store
+Thumbs.db
+Thumbs.db.meta
+*.private
+*.private.meta
+*.0
+*.0.private.meta
+*.meta.*
+/obj
+*.suo
+/LocalCache
+AssetBundles
+!/Assets/**/*.exe
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio cache files
+# files ending in .cache can be ignored
+*.[Cc]ache
+# but keep track of directories ending in .cache
+!*.[Cc]ache/
