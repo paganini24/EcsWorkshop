@@ -72,7 +72,7 @@ namespace SmallGame
         {
             var state = islandStateGroup.islandSpawnState[0];
             PostUpdateCommands.CreateEntity(Bootstrap.islandArchetype);
-            var spawnLocation = state.islandCount == 0 ? new float3(0f, -0.5f, 0f) : state.lastPosition + GetSpawnLocation();
+            var spawnLocation = state.islandCount == 0 ? new float3(0f, -2.9392f, 0f) : state.lastPosition + GetSpawnLocation();
             PostUpdateCommands.SetComponent(new Position() { Value = spawnLocation });
             var randomScale = GetRandomScale();
             PostUpdateCommands.SetComponent(new Scale() { Value = randomScale });
@@ -90,8 +90,7 @@ namespace SmallGame
         private float3 GetRandomScale()
         {
             var range = Random.Range(Bootstrap.settings.randomSize.x, Bootstrap.settings.randomSize.y);
-            return new float3(range
-                , 0.2f, range);
+            return new float3(range, 5.07836f, range);
         }
 
         private float3 GetSpawnLocation()
