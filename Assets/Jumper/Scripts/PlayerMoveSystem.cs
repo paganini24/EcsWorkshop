@@ -2,7 +2,7 @@
 using Unity.Jobs;
 using Unity.Transforms;
 using UnityEngine;
-namespace SmallGame
+namespace Jumper
 {
     public struct PlayerJump : IComponentData
     {

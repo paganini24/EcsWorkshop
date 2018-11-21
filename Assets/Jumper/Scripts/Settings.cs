@@ -1,7 +1,7 @@
 ﻿using Unity.Mathematics;
 using UnityEngine;
 
-namespace SmallGame
+namespace Jumper
 {
     [CreateAssetMenu]
     public class Settings : ScriptableObject

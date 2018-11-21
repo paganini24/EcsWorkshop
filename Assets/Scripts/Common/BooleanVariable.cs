@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace SmallGame
+namespace Scripts.Common
 {
     [CreateAssetMenu]
     public class BooleanVariable : UnityEngine.ScriptableObject

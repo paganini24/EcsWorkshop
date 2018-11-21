@@ -4,7 +4,7 @@ using Unity.Entities;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace SmallGame
+namespace Jumper
 {
     [AlwaysUpdateSystem]
     public class GameHud : ComponentSystem

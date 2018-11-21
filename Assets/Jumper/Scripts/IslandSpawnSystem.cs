@@ -3,7 +3,7 @@ using Unity.Mathematics;
 using Unity.Transforms;
 using Random = UnityEngine.Random;
 
-namespace SmallGame
+namespace Jumper
 {
     public struct Island : IComponentData {public int Index;}
 

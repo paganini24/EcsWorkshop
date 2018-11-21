@@ -1,10 +1,9 @@
-﻿using Unity.Burst;
-using Unity.Entities;
+﻿using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
-using UnityEngine;
-namespace SmallGame
+
+namespace Jumper
 {
     public struct PlayerCheck : IComponentData { }
     public class PlayerCheckRemoveBarrier : BarrierSystem { }

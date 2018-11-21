@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{528F561F-733B-BFD6-E7FF-9FC6EB96BBD4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jumper", "Jumper.csproj", "{BAC0A689-70B1-E395-50A3-4E568572D74C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common.csproj", "{04BA0023-B0D5-8BCE-6D5C-82B55BA06C4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{528F561F-733B-BFD6-E7FF-9FC6EB96BBD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{528F561F-733B-BFD6-E7FF-9FC6EB96BBD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{528F561F-733B-BFD6-E7FF-9FC6EB96BBD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{528F561F-733B-BFD6-E7FF-9FC6EB96BBD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC0A689-70B1-E395-50A3-4E568572D74C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC0A689-70B1-E395-50A3-4E568572D74C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC0A689-70B1-E395-50A3-4E568572D74C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC0A689-70B1-E395-50A3-4E568572D74C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04BA0023-B0D5-8BCE-6D5C-82B55BA06C4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04BA0023-B0D5-8BCE-6D5C-82B55BA06C4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04BA0023-B0D5-8BCE-6D5C-82B55BA06C4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04BA0023-B0D5-8BCE-6D5C-82B55BA06C4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

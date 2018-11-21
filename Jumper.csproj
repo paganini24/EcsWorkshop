@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{528F561F-733B-BFD6-E7FF-9FC6EB96BBD4}</ProjectGuid>
+    <ProjectGuid>{BAC0A689-70B1-E395-50A3-4E568572D74C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Jumper</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -60,93 +60,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Common\BooleanVariable.cs" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\Jumper\Shaders\customfog.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Android.Editor">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Analytics.Android.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    <Compile Include="Assets\Jumper\Scripts\Bootstrap.cs" />
+    <Compile Include="Assets\Jumper\Scripts\CameraMoveComponent.cs" />
+    <Compile Include="Assets\Jumper\Scripts\CameraMoveSystem.cs" />
+    <Compile Include="Assets\Jumper\Scripts\Easings-master\Easings.cs" />
+    <Compile Include="Assets\Jumper\Scripts\GameHud.cs" />
+    <Compile Include="Assets\Jumper\Scripts\IslandSpawnSystem.cs" />
+    <Compile Include="Assets\Jumper\Scripts\PlayerCheckSystem.cs" />
+    <Compile Include="Assets\Jumper\Scripts\PlayerInputSystem.cs" />
+    <Compile Include="Assets\Jumper\Scripts\PlayerMoveSystem.cs" />
+    <Compile Include="Assets\Jumper\Scripts\Settings.cs" />
+    <Reference Include="Unity.Entities">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Entities.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Entities.Properties">
       <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Entities.Properties.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Properties.Codegen">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Properties.Codegen.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Jobs">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Jobs.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Jobs.Editor">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Jobs.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Entities.Editor">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Entities.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Properties">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Properties.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Collections">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rendering.Hybrid">
       <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Properties.Editor">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Properties.Editor.dll</HintPath>
+    <Reference Include="Unity.Transforms">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Entities.Hybrid">
       <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Entities">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Entities.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Transforms">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Transforms.Editor">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Transforms.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Editor">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Transforms.Hybrid">
-      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll</HintPath>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>E:/Applications/2018.3.0b8/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -331,17 +274,47 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>E:/Applications/2018.3.0b8/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>E:/Applications/2018.3.0b8/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Timeline">
       <HintPath>E:/Applications/2018.3.0b8/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Timeline">
+      <HintPath>E:/Applications/2018.3.0b8/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>E:/Applications/2018.3.0b8/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>E:/Applications/2018.3.0b8/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GoogleAudioSpatializer">
+      <HintPath>E:/Applications/2018.3.0b8/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.GoogleAudioSpatializer">
       <HintPath>E:/Applications/2018.3.0b8/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>E:/Applications/2018.3.0b8/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>E:/Applications/2018.3.0b8/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>E:/Applications/2018.3.0b8/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>E:/Applications/2018.3.0b8/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>E:/Applications/2018.3.0b8/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/2015/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Editor.dll</HintPath>
@@ -358,8 +331,23 @@
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/PackageCache/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/PackageCache/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
       <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/PackageCache/com.unity.collections@0.0.9-preview.10/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/PackageCache/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/PackageCache/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/PackageCache/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/PackageCache/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>E:/Applications/2018.3.0b8/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -708,9 +696,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Jumper.csproj">
-      <Project>{BAC0A689-70B1-E395-50A3-4E568572D74C}</Project>
-      <Name>Jumper</Name>
+    <ProjectReference Include="Common.csproj">
+      <Project>{04BA0023-B0D5-8BCE-6D5C-82B55BA06C4F}</Project>
+      <Name>Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

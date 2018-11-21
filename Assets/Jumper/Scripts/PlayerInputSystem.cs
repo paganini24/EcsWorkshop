@@ -1,6 +1,6 @@
 ﻿using Unity.Entities;
 using UnityEngine;
-namespace SmallGame
+namespace Jumper
 {
     public struct PlayerInput : IComponentData
     {

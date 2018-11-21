@@ -1,0 +1,21 @@
+{
+    "name": "Jumper",
+    "references": [
+        "Unity.Entities",
+        "Unity.Entities.Properties",
+        "Unity.Mathematics",
+        "Unity.Rendering.Hybrid",
+        "Unity.Transforms",
+        "Unity.Entities.Hybrid",
+        "Unity.TextMeshPro",
+        "Common"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
