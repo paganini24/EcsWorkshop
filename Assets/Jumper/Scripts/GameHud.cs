@@ -6,7 +6,8 @@ using Object = UnityEngine.Object;
 
 namespace Jumper
 {
-    [AlwaysUpdateSystem]
+    //[AlwaysUpdateSystem] //TODO find a solution for reshowing the hud when player is dead
+    // If we AlwaysUpdateSystem else case in Update will work 
     public class GameHud : ComponentSystem
     {
         private GameObject _canvasNewGame,_canvasScore;
@@ -23,7 +24,7 @@ namespace Jumper
         [Inject]
         PlayerState playerStateGroup;
 
-        protected override void OnCreateManager()
+        public  void Setup()
         {
             // new game menu
             var menu = Resources.Load<GameObject>("UI/Canvas_NewGame");

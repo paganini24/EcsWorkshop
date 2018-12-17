@@ -1,0 +1,25 @@
+{
+    "name": "Unity.ECS.VR",
+    "references": [
+        "Unity.Entities",
+        "Unity.Entities.Properties",
+        "Unity.Mathematics",
+        "Unity.Rendering.Hybrid",
+        "Unity.Transforms",
+        "Unity.Entities.Hybrid",
+        "Unity.TextMeshPro",
+        "Common",
+        "Unity.Jobs",
+        "Unity.Burst",
+        "Unity.Collections",
+        "Unity.Transforms.Hybrid"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

@@ -3,7 +3,7 @@ using Unity.Collections;
 using Unity.Entities;
 using Unity.Transforms;
 
-namespace Assets.Scripts.SmallGame
+namespace Common.SmallGame
 {
     [AlwaysUpdateSystem]
     public class CameraMoveSystem : ComponentSystem

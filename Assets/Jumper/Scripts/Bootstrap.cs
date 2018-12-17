@@ -35,7 +35,7 @@ namespace Jumper
 
             _boolNewGame.ValueChanged += b => { if(b) NewGame(); };
 
-            World.Active.GetOrCreateManager<GameHud>();
+            World.Active.GetOrCreateManager<GameHud>().Setup();
         }
 
         private static MeshInstanceRenderer GetLookFromResources(string resourceName)

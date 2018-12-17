@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132c44bc4c0cd0c40af568e600a76021, type: 3}
+  m_Name: Ecs Vr Settings
+  m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 7084014813360410261, guid: 7853a1f80daad0e4d923de15111f2a09,
+    type: 3}
+  vrControllerRenderer:
+    mesh: {fileID: 4300000, guid: 28ccfba106936734bb433e3b344b8828, type: 3}
+    material: {fileID: 2100000, guid: ccc601239c0787c4d888e33eb8818a39, type: 2}

@@ -10,10 +10,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{04BA0023-B0D5-8BCE-6D5C-82B55BA06C4F}</ProjectGuid>
+    <ProjectGuid>{99754E06-BC68-36C2-6C27-D3A5DA1CD86F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Common</AssemblyName>
+    <AssemblyName>Unity.ECS.VR</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -27,7 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,7 +36,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -54,8 +54,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Common\BooleanVariable.cs" />
-    <None Include="Assets\Scripts\Common\Common.asmdef" />
+    <Compile Include="Assets\ECS_VR\Scripts\ComponentTypes.cs" />
+    <Compile Include="Assets\ECS_VR\Scripts\Interactions\Teleport\TeleportPosition.cs" />
+    <Compile Include="Assets\ECS_VR\Scripts\Interactions\Teleport\TeleportPositionInputSystem.cs" />
+    <Compile Include="Assets\ECS_VR\Scripts\Interactions\Teleport\TeleportPositionSystem.cs" />
+    <Compile Include="Assets\ECS_VR\Scripts\Rendering\TrackedMeshInstanceRendererComponent.cs" />
+    <Compile Include="Assets\ECS_VR\Scripts\Rendering\TrackedMeshInstanceRendererSystem.cs" />
+    <Compile Include="Assets\ECS_VR\Scripts\Rendering\TrackedRenderingSystemBootstrap.cs" />
+    <Compile Include="Assets\ECS_VR\Scripts\ScriptableObject\VrSettings.cs" />
+    <Compile Include="Assets\ECS_VR\Scripts\VrNodeTrackingSystem.cs" />
+    <Compile Include="Assets\ECS_VR\Scripts\VrNodeTransformSystem.cs" />
+    <Compile Include="Assets\ECS_VR\Scripts\VrPlayerComponent.cs" />
+    <Compile Include="Assets\ECS_VR\Scripts\VrSetup.cs" />
+    <None Include="Assets\ECS_VR\Scripts\Unity.ECS.VR.asmdef" />
+    <Reference Include="Unity.Entities">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities.Properties">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Entities.Properties.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rendering.Hybrid">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities.Hybrid">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Jobs">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Jobs.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms.Hybrid">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>E:/Applications/2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
@@ -674,6 +718,12 @@
     <Reference Include="Boo.Lang">
       <HintPath>E:/Applications/2018.3.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Common.csproj">
+      <Project>{04BA0023-B0D5-8BCE-6D5C-82B55BA06C4F}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

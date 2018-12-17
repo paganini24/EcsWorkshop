@@ -1,7 +1,7 @@
 ﻿using System;
 using Unity.Entities;
 using UnityEngine;
-namespace Assets.Scripts.SmallGame
+namespace Common.SmallGame
 {
     [Serializable]
     public struct CameraMove : ISharedComponentData
