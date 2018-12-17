@@ -55,13 +55,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ECS_VR\Scripts\ComponentTypes.cs" />
-    <Compile Include="Assets\ECS_VR\Scripts\Interactions\Teleport\TeleportPosition.cs" />
     <Compile Include="Assets\ECS_VR\Scripts\Interactions\Teleport\TeleportPositionInputSystem.cs" />
     <Compile Include="Assets\ECS_VR\Scripts\Interactions\Teleport\TeleportPositionSystem.cs" />
+    <Compile Include="Assets\ECS_VR\Scripts\Interactions\Teleport\VrTeleportPosition.cs" />
     <Compile Include="Assets\ECS_VR\Scripts\Rendering\TrackedMeshInstanceRendererComponent.cs" />
     <Compile Include="Assets\ECS_VR\Scripts\Rendering\TrackedMeshInstanceRendererSystem.cs" />
     <Compile Include="Assets\ECS_VR\Scripts\Rendering\TrackedRenderingSystemBootstrap.cs" />
     <Compile Include="Assets\ECS_VR\Scripts\ScriptableObject\VrSettings.cs" />
+    <Compile Include="Assets\ECS_VR\Scripts\VrCameraComponent.cs" />
     <Compile Include="Assets\ECS_VR\Scripts\VrNodeTrackingSystem.cs" />
     <Compile Include="Assets\ECS_VR\Scripts\VrNodeTransformSystem.cs" />
     <Compile Include="Assets\ECS_VR\Scripts\VrPlayerComponent.cs" />

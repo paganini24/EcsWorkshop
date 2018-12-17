@@ -1,4 +1,5 @@
-﻿using Unity.Entities.VR.Rendering;
+﻿using Unity.Entities.VR.Interactions.Teleport;
+using Unity.Entities.VR.Rendering;
 using Unity.Transforms;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -32,6 +33,7 @@ namespace Unity.Entities.VR
             var rightController = manager.CreateEntity(vrControllerArchetype);
             manager.SetComponentData(rightController, new VrNodeData() {xrNode = XRNode.RightHand});
             manager.SetSharedComponentData(rightController, controllerModel);
+            manager.AddComponentData(rightController, new VrTeleport());
 
             // Player
             var player = CreatePlayer();
@@ -63,8 +65,11 @@ namespace Unity.Entities.VR
             vrCamera.AddComponent<GameObjectEntity>();
             vrCamera.AddComponent<PositionComponent>();
             vrCamera.AddComponent<RotationComponent>();
+            var cameraComponent = vrCamera.AddComponent<VrCameraComponent>();
+            vrCamera.AddComponent<CopyTransformFromGameObjectComponent>();
             // Camera
             var cam = vrCamera.AddComponent<Camera>();
+            cameraComponent.Value = new VrCamera(){camera = cam};
             cam.stereoTargetEye = StereoTargetEyeMask.Both;
             cam.nearClipPlane = 0.01f;
             return gameObjectEntity.Entity;
