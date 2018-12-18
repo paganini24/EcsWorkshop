@@ -7,6 +7,10 @@ namespace Unity.Entities.VR.Interactions.Teleport
     {
         public float3 position;
     }
-    //public struct TeleportBegin : IComponentData{    }
-    public struct VrTeleport : IComponentData{    }
+
+    public struct VrTeleportPositionIndicator : IComponentData
+    {
+        public float3 start, end;
+    }
+    public struct VrTeleport : IComponentData{}
 }
