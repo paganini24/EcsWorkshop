@@ -28,7 +28,7 @@ namespace Unity.Entities.VR.Interactions.Teleport
                 castShadows = ShadowCastingMode.Off,
                 material = Resources.Load<Material>("LaserMaterial"),
                 receiveShadows = false,
-                mesh = Resources.Load<GameObject>("LaserPointer").GetComponent<MeshFilter>().sharedMesh
+                mesh = Resources.Load<GameObject>("LaserPointer").GetComponent<MeshFilter>().mesh
             };
         }
 
@@ -40,6 +40,7 @@ namespace Unity.Entities.VR.Interactions.Teleport
                 var rot = _vrTeleportControllerGroup.GetComponentDataArray<Rotation>()[i];
                 var pos = _vrTeleportControllerGroup.GetComponentDataArray<LocalToWorld>()[i].Value.c3.xyz;
                 // Hold
+                // A bit dirty here we can seperate here to another system actually
                 if (Input.GetButtonDown($"{controllers[i].xrNode} Trackpad Touch"))
                 {
                     PostUpdateCommands.CreateEntity(_teleportPositionBeginArchetype);
@@ -52,7 +53,7 @@ namespace Unity.Entities.VR.Interactions.Teleport
                 {
                     Vector3 hitPos;
                     float distance;
-                    var b = (CastRay(pos, rot, out hitPos, out distance));
+                    CastRay(pos, rot, out hitPos, out distance);
                     var entity = _vrTeleportPositionBeginGroup.GetEntityArray()[0];
                     PostUpdateCommands.SetComponent(entity,new Position() {Value = pos + math.forward(rot.Value) * distance/2});
                     PostUpdateCommands.SetComponent(entity,new Rotation() {Value = rot.Value});

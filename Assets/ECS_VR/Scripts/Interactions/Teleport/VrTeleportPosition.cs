@@ -10,7 +10,6 @@ namespace Unity.Entities.VR.Interactions.Teleport
 
     public struct VrTeleportPositionIndicator : IComponentData
     {
-        public float3 start, end;
     }
     public struct VrTeleport : IComponentData{}
 }
