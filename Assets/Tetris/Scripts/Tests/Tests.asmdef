@@ -1,0 +1,23 @@
+{
+    "name": "Tests",
+    "references": [
+        "Unity.Entities",
+        "Unity.Entities.Tests",
+        "Unity.Transforms",
+        "Unity.Mathematics",
+        "Unity.Rendering.Hybrid",
+        "Tetris"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
