@@ -8,7 +8,8 @@
         "Unity.Transforms",
         "Unity.Entities.Hybrid",
         "Unity.TextMeshPro",
-        "Common"
+        "Common",
+        "Unity.Burst"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [],

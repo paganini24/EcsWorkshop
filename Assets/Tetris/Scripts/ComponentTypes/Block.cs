@@ -5,6 +5,5 @@ namespace Tetris
 {
     public struct Block : IComponentData
     {
-        public float2 position;
     }
 }

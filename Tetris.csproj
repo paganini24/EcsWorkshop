@@ -56,7 +56,8 @@
   <ItemGroup>
     <Compile Include="Assets\Tetris\Scripts\BlockSpawnSystem.cs" />
     <Compile Include="Assets\Tetris\Scripts\ComponentTypes\Block.cs" />
-    <Compile Include="Assets\Tetris\Scripts\ComponentTypes\TetrisGrid.cs" />
+    <Compile Include="Assets\Tetris\Scripts\ComponentTypes\MovableBlock.cs" />
+    <Compile Include="Assets\Tetris\Scripts\ComponentTypes\Shape.cs" />
     <Compile Include="Assets\Tetris\Scripts\Serialization\Editor\SerializePrefabToEcs.cs" />
     <Compile Include="Assets\Tetris\Scripts\Serialization\TetrisTransformContainer.cs" />
     <Compile Include="Assets\Tetris\Scripts\TetrisGridSystem.cs" />
@@ -81,6 +82,9 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>E:/UnityProjects/Testing/EcsWorkshop/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>E:/Applications/2018.3.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

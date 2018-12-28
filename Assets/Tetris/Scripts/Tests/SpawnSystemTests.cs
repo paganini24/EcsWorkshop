@@ -50,7 +50,7 @@ namespace Tetris.Tests
                 var blockData = data.transformDatas[index];
                 manager.SetComponentData(entities[index], new Position() {Value = blockData.position});
                 manager.SetComponentData(entities[index], new Rotation() {Value = blockData.rotation});
-                manager.SetComponentData(entities[index], new Block() {position = blockData.position.xy});
+                manager.SetComponentData(entities[index], new Block() );
                 manager.SetSharedComponentData(entities[index], data.renderer);
                 
                 var renderer = manager.GetSharedComponentData<MeshInstanceRenderer>(entity);
@@ -88,7 +88,7 @@ namespace Tetris.Tests
                 var blockData = data.transformDatas[index];
                 manager.SetComponentData(entities[index], new Position() {Value = blockData.position});
                 manager.SetComponentData(entities[index], new Rotation() {Value = blockData.rotation});
-                manager.SetComponentData(entities[index], new Block() {position = blockData.position.xy});
+                manager.SetComponentData(entities[index], new Block());
                 manager.SetSharedComponentData(entities[index], data.renderer);
                 
                 var pos = manager.GetComponentData<Position>(entity).Value;
