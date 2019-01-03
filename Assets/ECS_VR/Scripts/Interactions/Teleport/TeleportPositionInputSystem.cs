@@ -7,6 +7,7 @@ using UnityEngine.Rendering;
 
 namespace Unity.Entities.VR.Interactions.Teleport
 {
+    [DisableAutoCreation]
     public class TeleportPositionInputSystem : ComponentSystem
     {
         private ComponentGroup _vrTeleportControllerGroup, _vrTeleportPositionBeginGroup;

@@ -43,6 +43,8 @@ namespace Unity.Entities.VR
             var attachRight = manager.CreateEntity(typeof(Attach));
             manager.SetComponentData(attachLeft, new Attach {Parent = player, Child = leftController });
             manager.SetComponentData(attachRight, new Attach { Parent = player, Child = rightController});
+
+            World.Active.GetOrCreateManager<TeleportPositionInputSystem>();
         }
         /// <summary>
         /// Creates hybrid vr player with camera
