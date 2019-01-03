@@ -1,6 +1,7 @@
 /bin
 /Library
 /.idea
+*.vs
 *.unityproj
 *.userprefs
 *.pidb
